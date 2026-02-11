@@ -1,0 +1,274 @@
+<div class="aqua-stade-container">
+    <!-- Navbar -->
+    <nav class="aqua-navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <!-- Utilisez une image de placeholder si l'image n'existe pas -->
+                <img src="assets/images/logo/aqua-stade-logo.svg" alt="Aqua Stade Logo" class="logo-img">
+                <span class="logo-text">Aqua Stade</span>
+            </div>
+            <div class="navbar-links">
+                <a href="#home" class="nav-link active">Accueil</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a routerLink="/sign-in" class="nav-link login-link">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Logo -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="logo-container">
+                <!-- Placeholder pour le logo -->
+                <div class="logo-placeholder">
+                    <div class="wave-icon">🌊</div>
+                </div>
+            </div>
+            <h1 class="hero-title">Aqua Stade</h1>
+            <p class="hero-subtitle">Votre complexe de natation professionnel</p>
+            <div class="hero-buttons">
+                <button mat-flat-button color="primary" class="hero-btn" (click)="scrollToPacks()">
+                    Réserver Maintenant
+                </button>
+                <button mat-stroked-button color="accent" class="hero-btn" routerLink="/sign-up">
+                    Créer un Compte
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Packs Section -->
+    <section id="packs" class="packs-section">
+        <div class="section-container">
+            <h2 class="section-title">Nos Packs de Réservation</h2>
+            <p class="section-subtitle">Choisissez le pack qui vous convient</p>
+
+            <div class="packs-grid">
+                <!-- Pack 1 -->
+                <mat-card class="pack-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="pack-icon">🏊</div>
+                        <mat-card-title>Pack Découverte</mat-card-title>
+                        <mat-card-subtitle>Pour les débutants</mat-card-subtitle>
+                    </mat-card-header>
+
+                    <mat-card-content>
+                        <div class="pack-price">
+                            <span class="price">499</span>
+                            <span class="currency">DH</span>
+                        </div>
+                        <div class="pack-details">
+                            <p><mat-icon>timer</mat-icon> 10 séances</p>
+                            <p><mat-icon>calendar_today</mat-icon> 1 mois</p>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <ul class="pack-features">
+                            <li><mat-icon>check_circle</mat-icon> Accès piscine</li>
+                            <li><mat-icon>check_circle</mat-icon> Casier sécurisé</li>
+                            <li><mat-icon>check_circle</mat-icon> 1 séance coaching</li>
+                        </ul>
+                    </mat-card-content>
+
+                    <mat-card-actions>
+                        <button mat-flat-button color="primary" class="pack-btn">
+                            Choisir ce Pack
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+
+                <!-- Pack 2 - Featured -->
+                <mat-card class="pack-card pack-featured">
+                    <mat-card-header>
+                        <div mat-card-avatar class="pack-icon">🚀</div>
+                        <mat-card-title>Pack Premium</mat-card-title>
+                        <mat-card-subtitle>Le plus populaire</mat-card-subtitle>
+                    </mat-card-header>
+
+                    <mat-card-content>
+                        <div class="pack-price">
+                            <span class="price">899</span>
+                            <span class="currency">DH</span>
+                        </div>
+                        <div class="pack-details">
+                            <p><mat-icon>timer</mat-icon> 20 séances</p>
+                            <p><mat-icon>calendar_today</mat-icon> 2 mois</p>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <ul class="pack-features">
+                            <li><mat-icon>check_circle</mat-icon> Accès illimité</li>
+                            <li><mat-icon>check_circle</mat-icon> Coaching personnel</li>
+                            <li><mat-icon>check_circle</mat-icon> Accès sauna</li>
+                            <li><mat-icon>check_circle</mat-icon> Plan nutritionnel</li>
+                        </ul>
+                    </mat-card-content>
+
+                    <mat-card-actions>
+                        <button mat-flat-button color="accent" class="pack-btn">
+                            Choisir ce Pack
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+
+                <!-- Pack 3 -->
+                <mat-card class="pack-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="pack-icon">🏅</div>
+                        <mat-card-title>Pack Compétition</mat-card-title>
+                        <mat-card-subtitle>Pour les professionnels</mat-card-subtitle>
+                    </mat-card-header>
+
+                    <mat-card-content>
+                        <div class="pack-price">
+                            <span class="price">1499</span>
+                            <span class="currency">DH</span>
+                        </div>
+                        <div class="pack-details">
+                            <p><mat-icon>timer</mat-icon> 30 séances</p>
+                            <p><mat-icon>calendar_today</mat-icon> 3 mois</p>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <ul class="pack-features">
+                            <li><mat-icon>check_circle</mat-icon> Accès 24/7</li>
+                            <li><mat-icon>check_circle</mat-icon> Coaching intensif</li>
+                            <li><mat-icon>check_circle</mat-icon> Accès tous équipements</li>
+                            <li><mat-icon>check_circle</mat-icon> Suivi personnalisé</li>
+                            <li><mat-icon>check_circle</mat-icon> Accès compétitions</li>
+                        </ul>
+                    </mat-card-content>
+
+                    <mat-card-actions>
+                        <button mat-flat-button color="primary" class="pack-btn">
+                            Choisir ce Pack
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="coaches-section">
+        <div class="section-container">
+            <h2 class="section-title">Nos Entraîneurs</h2>
+            <p class="section-subtitle">Des professionnels qualifiés à votre service</p>
+
+            <div class="coaches-grid">
+                <!-- Coach 1 -->
+                <mat-card class="coach-card">
+                    <div class="coach-image-container">
+                        <div class="coach-placeholder">
+                            <div class="coach-initials">MA</div>
+                        </div>
+                        <div class="coach-status available">
+                            Disponible
+                        </div>
+                    </div>
+                    <mat-card-content>
+                        <h3 class="coach-name">Mohamed Ali</h3>
+                        <p class="coach-specialty">Coach de natation sportive</p>
+                        <p class="coach-experience">
+                            <mat-icon>workspace_premium</mat-icon>
+                            8 ans d'expérience
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-flat-button color="accent" class="coach-btn">
+                            Réserver une Séance
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+
+                <!-- Coach 2 -->
+                <mat-card class="coach-card">
+                    <div class="coach-image-container">
+                        <div class="coach-placeholder">
+                            <div class="coach-initials">SF</div>
+                        </div>
+                        <div class="coach-status">
+                            Non Disponible
+                        </div>
+                    </div>
+                    <mat-card-content>
+                        <h3 class="coach-name">Sara Fathi</h3>
+                        <p class="coach-specialty">Spécialiste dos crawlé</p>
+                        <p class="coach-experience">
+                            <mat-icon>workspace_premium</mat-icon>
+                            5 ans d'expérience
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-flat-button color="accent" class="coach-btn" disabled>
+                            Indisponible
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+
+                <!-- Coach 3 -->
+                <mat-card class="coach-card">
+                    <div class="coach-image-container">
+                        <div class="coach-placeholder">
+                            <div class="coach-initials">KA</div>
+                        </div>
+                        <div class="coach-status available">
+                            Disponible
+                        </div>
+                    </div>
+                    <mat-card-content>
+                        <h3 class="coach-name">Karim Amrani</h3>
+                        <p class="coach-specialty">Entraîneur de water-polo</p>
+                        <p class="coach-experience">
+                            <mat-icon>workspace_premium</mat-icon>
+                            12 ans d'expérience
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-flat-button color="accent" class="coach-btn">
+                            Réserver une Séance
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <mat-icon>location_on</mat-icon>
+                    <p>Avenue Hassan II, Casablanca</p>
+                </div>
+                <div class="contact-item">
+                    <mat-icon>phone</mat-icon>
+                    <p>+212 522-123-456</p>
+                </div>
+                <div class="contact-item">
+                    <mat-icon>email</mat-icon>
+                    <p>contact@aquastade.ma</p>
+                </div>
+                <div class="contact-item">
+                    <mat-icon>schedule</mat-icon>
+                    <p>Lundi - Samedi: 6h00 - 22h00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="aqua-footer">
+        <div class="footer-content">
+            <div class="footer-logo-placeholder">
+                <div class="wave-icon-small">🌊</div>
+            </div>
+            <p>&copy; 2024 Aqua Stade. Tous droits réservés.</p>
+            <p class="footer-links">
+                <a href="#">Mentions légales</a> | 
+                <a href="#">Politique de confidentialité</a> | 
+                <a href="#">Conditions d'utilisation</a>
+            </p>
+        </div>
+    </footer>
+</div>
